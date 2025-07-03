@@ -36,7 +36,18 @@
 
       .my-flex-container {
         gap: 2rem;
+      }
 
+      .h-r {
+        height: 4px;
+        background-color: hsl(14, 100%, 53%);
+        border-radius: 2px;
+        width: 100px;
+        margin-left: calc(50% - 50px);
+      }
+      .card-border {
+        border: solid  #dbd6d6 1px ;
+        
       }
     </style>
   </head>
@@ -145,10 +156,83 @@
           </div>
         </div>
       </section>
-
-      
     </head>
 
-    <main></main>
+    <main>
+      <section class="section has-background-white">
+        <div class="container has-text-centered">
+          <h2 class="has-text-info is-size-2">Great Power Comes</h2>
+          <p class="is-size-4">With great responsability</p>
+          <div class="h-r mt-4"></div>
+
+          <div class="columns is-centered mt-5">
+            <div class="column is-3">
+                <div class="card has-background-white card-border " >
+                    <h3 class="has-text-info my-4">App builder</h3>
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="./images/web.svg"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    
+    
+                    <div class="content">
+                      This is some cool explanatory text that is on tow rows
+                    </div>
+                    <div class="button is-link">Free Trial</div>
+                  </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="card has-background-white card-border " >
+                    <h3 class="has-text-info my-4">Cloud integration</h3>
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="./images/rocket.svg"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    
+    
+                    <div class="content">
+                      This is some explanatory text that is on tow rows
+                    </div>
+                    <div class="button is-link">Get Started</div>
+                  </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="card has-background-white card-border " >
+                    <h3 class="has-text-info my-4">Addonse & Plugins</h3>
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="./images/light-bulb.svg"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    
+    
+                    <div class="content">
+                      This is some explanatory text that is on tow rows
+                    </div>
+                    <div class="button is-link">Get Started</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
   </body>
 </html>
