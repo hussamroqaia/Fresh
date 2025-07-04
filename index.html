@@ -12,7 +12,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
       :root {
         --bulma-primary-h: 36deg;
         --bulma-primary-l: 48%;
@@ -47,11 +56,43 @@
       }
       .card-border {
         border: solid #f1f4f4 1px;
+        color: rgb(106, 123, 150);
+      }
+
+      .cir {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid #efefef 1px;
+        position: relative;
+      }
+      .absulot {
+        position: absolute;
+        top: 23px;
+        right: 8px;
+      }
+      .feature {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .feature-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 1rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ddd;
+      }
+      .feature-icon img {
+        max-width: 90px;
+        max-height: 90px;
       }
     </style>
   </head>
   <body>
-    <head>
+    <header>
       <nav
         class="navbar has-background-success"
         role="navigation"
@@ -155,7 +196,7 @@
           </div>
         </div>
       </section>
-    </head>
+    </header>
 
     <main>
       <section class="section has-background-white">
@@ -255,7 +296,6 @@
                 veritatis, voluptates cum, laboriosam molestias eligendi omnis!
               </p>
             </div>
-            
           </div>
           <div class="columns is-centered mt-6">
             <div class="column is-4">
@@ -271,8 +311,352 @@
                 <img src="./images/workers.svg" alt="Icon description" />
               </figure>
             </div>
-            
-            
+          </div>
+        </div>
+      </section>
+
+      <section class="section has-background-white">
+        <div class="container has-text-centered">
+          <h2 class="has-text-info is-size-2">Awesome Features</h2>
+          <p class="is-size-4">To make you supper happy</p>
+          <div class="h-r mt-4 mb-6"></div>
+
+          <div class="columns is-multiline is-centered">
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Github</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-bitbucket fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Bitbucket</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-slack fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Slack</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-npm fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Npm</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-js fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Javascript</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-node-js fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Nodejs</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-angular fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Angular</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-google fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Google</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-python fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Python</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-wordpress fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">WordPrees</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-android fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Android</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+
+            <div class="column is-3 has-text-centered">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-brands fa-apple fa-2xl"></i>
+                </div>
+                <h4 class="has-text-dark is-6">Apple</h4>
+                <p class="subtitle is-7">Some feature text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section has-background-white">
+        <div class="container">
+          <div class="columns is-multiline is-centered">
+            <div class="column is-3">
+              <div class="card p-3 has-background-success">
+                <div class="card-contant mb-4">
+                  <i class="fa-solid fa-quote-right fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <p class="has-text-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          class="is-rounded"
+                          src="./images/1.webp"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="has-text-dark is-5">Irma Walters</p>
+                      <p class="subtitle is-6">Accountant</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-3">
+              <div class="card p-3 has-background-success">
+                <div class="card-contant mb-4">
+                  <i class="fa-solid fa-quote-right fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <p class="has-text-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          class="is-rounded"
+                          src="./images/2.webp"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="has-text-dark is-5">John Bradley</p>
+                      <p class="subtitle is-6">Financial Analyst</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-3">
+              <div class="card p-3 has-background-success">
+                <div class="card-contant mb-4">
+                  <i class="fa-solid fa-quote-right fa-2xl"></i>
+                </div>
+                <div class="content">
+                  <p class="has-text-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img
+                          class="is-rounded"
+                          src="./images/3.webp"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="has-text-dark is-5">Gary Blackman</p>
+                      <p class="subtitle is-6">HR Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section has-background-white">
+        <div class="container has-text-centered">
+          <h2 class="has-text-info is-size-2 ">
+            Get Started
+          </h2>
+          <p class="is-size-4">Choose one of our plans</p>
+          <div class="h-r mt-4 mb-6"></div>
+
+          <div class="columns is-centered mt-5">
+            <div class="column is-3">
+              <div
+                class="card has-background-white card-border has-text-centered"
+              >
+                <h3 class="has-text-black is-size-4 my-4 has-text-weight-bold">
+                  Starter
+                </h3>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="./images/1.svg" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="contant is-flex is-justify-content-center">
+                    <span
+                      class="has-text-weight-bold has-text-black is-align-self-flex-start is-size-4"
+                      >$</span
+                    >
+                    <span class="is-size-2 has-text-weight-bold has-text-black"
+                      >0</span
+                    >
+                  </div>
+                  <div class="contant mb-7">per month</div>
+                  <div class="content">
+                    <p>
+                      Sign up, get some awesome features and get started now
+                    </p>
+                  </div>
+
+                  <div class="button is-fullwidth is-danger is-outlined">
+                    Get Started
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-3">
+              <div
+                class="card has-background-white card-border has-text-centered"
+              >
+                <h3 class="has-text-black is-size-4 my-4 has-text-weight-bold">
+                  Pro
+                </h3>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="./images/2.svg" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="contant is-flex is-justify-content-center">
+                    <span
+                      class="has-text-weight-bold has-text-black is-align-self-flex-start is-size-4"
+                      >$</span
+                    >
+                    <span class="is-size-2 has-text-weight-bold has-text-black"
+                      >15</span
+                    >
+                  </div>
+                  <div class="contant mb-7">per month</div>
+                  <div class="content">
+                    <p>
+                      Sign up, get some awesome features and get started now
+                    </p>
+                  </div>
+
+                  <div class="button is-link is-fullwidth">Get Started</div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-3">
+              <div
+                class="card has-background-white card-border has-text-centered"
+              >
+                <h3 class="has-text-black is-size-4 my-4 has-text-weight-bold">
+                  Starter
+                </h3>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="./images/3.svg" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="contant is-flex is-justify-content-center">
+                    <span
+                      class="has-text-weight-bold has-text-black is-align-self-flex-start is-size-4"
+                      >$</span
+                    >
+                    <span class="is-size-2 has-text-weight-bold has-text-black"
+                      >30</span
+                    >
+                  </div>
+                  <div class="contant mb-7">per month</div>
+                  <div class="content">
+                    <p>
+                      Sign up, get some awesome features and get started now
+                    </p>
+                  </div>
+
+                  <div class="button is-fullwidth is-danger is-outlined">
+                    Get Started
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
